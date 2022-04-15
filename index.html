@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script>
+<!--
+document.write(unescape("%3Clink%20href%3D%22../css/gongzhonghao.css%22%20rel%3D%22stylesheet%22%20type%3D%22text/css%22%20/%3E"));
+//-->
+</script>
+
+
+<style type="text/css">a {text-decoration: none}</style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>开心每一天</title>
+<script type="text/javascript" src="//lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+<style>
+blockquote, body, dd, dir, dl, fieldset, figure, form, h1, h2, h3, h4, h5, h6, hr, input, legend, menu, ol, optgroup, p, pre, tbody, td, textarea, tfoot, th, thead, ul {
+	margin: 0;
+	padding: 0
+}
+table{ margin: auto; }
+tb{ margin-left:auto; }
+
+ol, ul {
+	list-style-type: none;
+	list-style-image: none
+}
+
+body, button, input, select, textarea {
+	-ms-text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis;
+	text-autospace: ideograph-alpha ideograph-numeric ideograph-parenthesis
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	background: #F6F5F7;
+}
+
+.beatHeader {
+	background: #494A4D;
+	height: 50px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.beatMain {
+	position: relative;
+	z-index: 2;
+	padding: 0 16px;
+
+}
+
+.beatMain .imgContainer {
+	padding: 0 16px;
+	margin-top: 14px;
+}
+
+.beatMain .imgContainer img {
+	width: 100%;
+	height: auto;
+	box-shadow: 0px 3px 12px rgba(21, 0, 71, 0.16);
+}
+
+.beatMain .moonTitleContainer {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+.beatMain .moonTitleContainer span {
+	color: #FF5500;
+	margin-right: 16px;
+}
+
+.beatMain .itemContent {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.80);
+	line-height: 21px;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.beatMain .itemPrice {
+	font-family: STHeitiSC-Light;
+	font-size: 16px;
+	color: #FF5500;
+	line-height: 16.5px;
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.beatMain .itemTips {
+	font-size: 12px;
+	color: rgba(0,0,0,.4);
+	text-align: center;
+}
+
+.beatWord {
+	text-align: center;
+}
+
+.beatWord fieldset {
+	padding: 0.8em;
+	margin: 0 2px;
+	border: 1px dashed #f54d23;
+	background: #fff;
+}
+
+.beatWord fieldset legend {
+	background: #f54d23;
+	border: none;
+	font-size: 0.8rem;
+	line-height: 20px;
+	color: #fff;
+	padding: 0 4px;
+}
+
+.beatWord button {
+	border: none;
+	font-size: 16px;
+	padding: 6px 15px;
+	background: #f60;
+	display: inline-block;
+	margin: 10px auto;
+	border-radius: 16px;
+	color: #fff;
+}
+.top{  height: 45px; line-height: 45px; font-size: 15px; border-bottom: 1px solid #ccc; background: #fff;}
+.xz{ width: 100px; height: 36px; top: 5px; text-align: center;color: #fff; line-height: 36px; position: absolute; border-radius: 100px; background: #FB3A34; right: 3px; }
+// 下面为禁止右键js代码
+document.oncontextmenu = function(){
+    event.returnValue = false;
+}
+// 或者直接返回整个事件
+document.oncontextmenu = function(){
+    return false;
+}
+</style>
+</head>
+<body oncontextmenu = "return false">
+
+<div style="text-align:center"><img id="img" src="" alt="" style="width: 80%;height:80%"/></div>
+<div class="beatMain">
+	<div class="imgContainer">
+    <!-- <img id="img" src="http://img.alicdn.com/bao/uploaded/i2/2981597322/TB1NGcDSFXXXXbZXFXXXXXXXXXX_!!0-item_pic.jpg"> --></div>
+	<p class="itemContent">
+		<strong class="itemPrice"></strong>
+  <div id="item_title" style="font-weight: 700;font-size: 14px;margin-bottom: 5px;"></div>
+	</p>
+	<div class="beatWord">
+		<fieldset>
+			<legend id="copy_tip">↓↓↓↓↓↓↓领卷方式↓↓↓↓↓↓↓</legend>
+			<p id="itemWord" class="itemWord" style="font-size: 12px;">点击一键领券，打开手机「掏寳」即可「领取优惠卷」<p style="display:none;"> 
+需要隐藏的文字....... 
+</p> 
+<div style="display:none;"> 
+隐藏文字<span id="taokey"></span></p></div>
+		</fieldset>
+		<button id="copy" type="button" data-clipboard-text="" onclick="" class="itemCopy" style="display:none; width:50%; font-size:18px;">一键领卷</button>
+		
+		
+		
+		<fieldset>
+			<legend id="copy_tip"><font size="+0">注意事项</font></legend>
+            <table width="80%" border="0" align="center">
+  <tr>
+    <td style="font-size:12px" align="left"><font color="#FF0000"><strong>①、</strong></font>切勿使用红包支付会导致返利失败或者减少</td>
+  </tr>
+  <tr>
+    <td style="font-size:12px" align="left"><font color="#FF0000"><strong>②、</strong></font>把机器人推荐给好友，终身享受好友购物提成</td>
+  </tr>
+  <tr>
+    <td style="font-size:12px" align="left"><font color="#FF0000"><strong>③、</strong></font>不要先加购物车在发链接给我查券，容易丢失订</td>
+  </tr>
+  <tr>
+    <td style="font-size:12px" align="left"><font color="#FF0000"><strong>④、</strong></font>多件商品购物--先发链接给机器人</td>
+  </tr>
+  <tr>
+    <td style="font-size:12px" align="left"><font color="#FFFFFF"><strong>④、</strong></font>通过返利口令加购物车---多件商品一起付款</td>
+  </tr>
+</table>
+
+		</fieldset>
+  </div>
+</div>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<div id="nb-menu" style="padding-bottom:3px">
+    <ul class="nb-ul">
+	    		    	
+
+            <li class="nb-relative ">
+                <a href="http://xcx.kdd711.cn/app/index.php?i=2&c=entry&do=index&m=tiger_newhu" class="link-hover"></a>
+                <div class="menu-inside" style="height:38px;">
+					<i id="nb_btn_11" class="nb-btn" style="margin-bottom:3px;background-image:url('https://img.alicdn.com/imgextra/i4/1679356484/O1CN01QH5w6E1xliZ7mq7Px_!!1679356484.png');background-position: 50% 50%; background-repeat:no-repeat;width:25px;height:25px;border-radius: 0%;margin-bottom:8px"></i>
+                    <div class="font-div" style="padding-top:0px;margin-bottom:3px;">优惠总站</div>
+                </div>
+            </li>
+       		    	
+
+            <li class="nb-relative ">
+                <a href="http://xcx.kdd711.cn/app/index.php?i=2&c=entry&price2=9.9&do=newcat&m=tiger_newhu" class="link-hover"></a>
+                <div class="menu-inside" style="height:38px;">
+					<i id="nb_btn_12" class="nb-btn" style="margin-bottom:3px;background-image:url('https://img.alicdn.com/imgextra/i2/1679356484/O1CN011xliZ7mn2BnV96n_!!1679356484.png');background-position: 50% 50%; background-repeat:no-repeat;width:25px;height:25px;border-radius: 0%;margin-bottom:8px"></i>
+                    <div class="font-div" style="padding-top:0px;margin-bottom:3px;">9.9包邮</div>
+                </div>
+            </li>
+       		    	
+
+            <li class="nb-relative ">
+                <a href="http://xcx.kdd711.cn/app/index.php?i=2&c=entry&do=lmsearch&m=tiger_newhu" class="link-hover"></a>
+                <div class="menu-inside" style="height:38px;">
+					<i id="nb_btn_17" class="nb-btn" style="margin-bottom:3px;background-image:url('https://img.alicdn.com/imgextra/i4/1679356484/O1CN011xliZ9X9FGAhGVc_!!1679356484.png');background-position: 50% 50%; background-repeat:no-repeat;width:25px;height:25px;border-radius: 0%;margin-bottom:8px"></i>
+                    <div class="font-div" style="padding-top:0px;margin-bottom:3px;">超级搜索</div>
+                </div>
+            </li>
+       		    	
+
+            <li class="nb-relative ">
+                <a href="http://xcx.kdd711.cn/app/index.php?i=2&c=entry&do=muying&m=tiger_newhu" class="link-hover"></a>
+                <div class="menu-inside" style="height:38px;">
+					<i id="nb_btn_20" class="nb-btn" style="margin-bottom:3px;background-image:url('https://img.alicdn.com/imgextra/i4/1679356484/O1CN01ebvXPE1xliZ8kEBnJ_!!1679356484.png');background-position: 50% 50%; background-repeat:no-repeat;width:25px;height:25px;border-radius: 0%;margin-bottom:8px"></i>
+                    <div class="font-div" style="padding-top:0px;margin-bottom:3px;">母婴专区 </div>
+                </div>
+            </li>
+       		    	
+
+            <li class="nb-relative ">
+                <a href="http://xcx.kdd711.cn/app/index.php?i=2&c=entry&do=pddindex&m=tuike_pdd" class="link-hover"></a>
+                <div class="menu-inside" style="height:38px;">
+					<i id="nb_btn_13" class="nb-btn" style="margin-bottom:3px;background-image:url('https://img.alicdn.com/imgextra/i4/1679356484/O1CN01D6988S1xliZ0iZ2dR_!!1679356484.png');background-position: 50% 50%; background-repeat:no-repeat;width:25px;height:25px;border-radius: 0%;margin-bottom:8px"></i>
+                    <div class="font-div" style="padding-top:0px;margin-bottom:3px;">拼多多</div>
+                </div>
+            </li>
+       </ul>
+</div>
+
+<script type="text/javascript" src="//lib.baomitu.com/clipboard.js/1.6.1/clipboard.min.js"></script>
+<script>
+
+function getParams(){
+	var url = decodeURI(location.href);
+	
+  var paraString = url.substring(url.indexOf("key=") + 4, url.length);
+	return paraString;
+}
+ 
+var base64EncodeChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+var base64DecodeChars = new Array(
+    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+    -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 62, -1, -1, -1, 63,
+    52, 53, 54, 55, 56, 57, 58, 59, 60, 61, -1, -1, -1, -1, -1, -1,
+    -1,  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14,
+    15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, -1, -1, -1, -1, -1,
+    -1, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+    41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, -1, -1, -1, -1, -1);
+
+function base64decode(str) {
+    var c1, c2, c3, c4;
+    var i, len, out;
+
+    len = str.length;
+    i = 0;
+    out = "";
+    while(i < len) {
+        /* c1 */
+        do {
+            c1 = base64DecodeChars[str.charCodeAt(i++) & 0xff];
+        } while(i < len && c1 == -1);
+        if(c1 == -1)
+            break;
+
+        /* c2 */
+        do {
+            c2 = base64DecodeChars[str.charCodeAt(i++) & 0xff];
+        } while(i < len && c2 == -1);
+        if(c2 == -1)
+            break;
+
+        out += String.fromCharCode((c1 << 2) | ((c2 & 0x30) >> 4));
+
+        /* c3 */
+        do {
+            c3 = str.charCodeAt(i++) & 0xff;
+            if(c3 == 61)
+                return out;
+            c3 = base64DecodeChars[c3];
+        } while(i < len && c3 == -1);
+        if(c3 == -1)
+            break;
+
+        out += String.fromCharCode(((c2 & 0XF) << 4) | ((c3 & 0x3C) >> 2));
+
+        /* c4 */
+        do {
+            c4 = str.charCodeAt(i++) & 0xff;
+            if(c4 == 61)
+                return out;
+            c4 = base64DecodeChars[c4];
+        } while(i < len && c4 == -1);
+        if(c4 == -1)
+            break;
+        out += String.fromCharCode(((c3 & 0x03) << 6) | c4);
+    }
+    return out;
+}
+
+
+
+
+$(function(){
+	var key =getParams();
+var json =	base64decode(key);
+var	jsObject = JSON.parse(json);	
+
+	jsObject.Title =  decodeURI(jsObject.Title);
+	$('#taokey').text('￥'+jsObject.tkl+'￥');
+	$('#img').attr('src', jsObject.picture);
+	$('#coupons').attr('href',jsObject.url);
+	$('#copy').attr('data-clipboard-text', '￥'+jsObject.tkl+'￥');
+
+})
+var clipboard = new Clipboard('.itemCopy');
+clipboard.on('success',
+function(e) {
+	isc=0;
+	if (e.trigger.disabled == false || e.trigger.disabled == undefined) {
+		if(e.trigger.innerHTML=="支付bǎo红包"){
+			isc=1;
+				e.trigger.innerHTML = "复制成功，打开支付bǎo粘贴到搜索框";
+		}else{
+		e.trigger.innerHTML = "复制成功，打开手机「掏寳」即会自动弹出";
+		isc=0;
+		}
+		e.trigger.style.backgroundColor = "#9ED29E";
+		e.trigger.style.borderColor = "#9ED29E";
+		//e.clearSelection();
+		e.trigger.disabled = true;
+		//2秒后按钮恢复原状
+		setTimeout(function() {
+			if(isc==1){
+				e.trigger.innerHTML = "支付bǎo红包";
+			}else{
+				
+			e.trigger.innerHTML = "一键领取";
+			
+			}
+			e.trigger.style.backgroundColor = "#f54d23";
+			e.trigger.style.borderColor = "#f54d23";
+			e.trigger.disabled = false;
+		},
+		4000);
+		
+		
+		
+		
+		
+	}
+});
+
+clipboard.on('error',
+function(e) {
+	e.trigger.innerHTML = "复制失败";
+	e.trigger.style.backgroundColor = "#8f8f8f";
+	e.trigger.style.borderColor = "#8f8f8f";
+});
+
+$(function() {
+
+	//UA判断
+	var isShow = 0; //控制是否显示一键复制按钮
+	var ua = navigator.userAgent.toLowerCase();
+
+	if (ua.match(/iphone/i) == "iphone" || ua.match(/ipad/i) == "ipad") {
+
+		$('#copy_tip').text("长按框内 > 拷贝 > 打开手淘");
+		var iphoneInfo = ua.match(/iphone os (\d{1,})/i);
+		var iosVersion = iphoneInfo[1];
+		if (iosVersion >= 10 || ua.match(/ipad/i) == 'ipad') {
+			$('.itemCopy').show();
+		}
+
+	} else {
+		$('.itemCopy').show();
+	}
+
+	//自动选中
+	var beat = document.querySelector('.beatWord');
+	var word = document.querySelector('.itemWord');
+	var copy = document.querySelector('.itemCopy');
+	document.addEventListener("selectionchange",
+	function(e) {
+		window.getSelection().selectAllChildren(word);
+	},
+	false);
+
+});
+</script>
+<script type="text/javascript">
+setTimeout("delay.style.visibility='visible'",10000)
+</script>
+<!--下面为禁止右键代码-->
+<script>
+function click(){ 
+if(event.button==2){ 
+alert( '本网站欢迎您 !!'); 
+} 
+} 
+document.onmousedown=click 
+</script>
+</body>
+</html>
